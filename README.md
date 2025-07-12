@@ -45,7 +45,6 @@ No campo indicado na interface, cole sua chave de API para começar a interagir 
 
 - Peça recomendações para treinos ou configurações.
 
-- Utilize o campo de chat para explorar respostas da IA em tempo real.
 
 ### 📌 Observações
 Este projeto tem fins educacionais e demonstra como integrar IA com front-end puro.
