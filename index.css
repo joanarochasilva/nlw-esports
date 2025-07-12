@@ -89,8 +89,41 @@ button:hover {
   box-shadow: 0 5px 1rem rgba(255, 248, 107, .2);
 }
 
+button:disabled {
+  transition: none;
+  transform: translateY(0);
+  box-shadow: initial;
+  cursor: not-allowed;
+  color: #000;
+}
+
+#aiResponse {
+  background-color: rgba(0, 0, 0, .4);
+  border-radius: .5rem;
+  padding: 1.25rem;
+  border-left: 4px solid #43e7ad;
+  color: rgba(255, 255, 255);
+}
+
+#aiResponse ul {
+  padding-left: 1.5rem;
+  opacity: .8;
+}
+
+#aiResponse p {
+  color: #fff;
+}
+
 input {
   flex: 1;
+}
+
+.loading {
+  animation: pulse 1s infinite;
+}
+
+.hidden {
+  display: none;
 }
 
 /* ANIMAÇÕES */
@@ -108,5 +141,11 @@ main section {
   100% {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+@keyframes pulse {
+  50% {
+    opacity: .5;
   }
 }
