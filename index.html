@@ -9,7 +9,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./index.css">
-  <script src="./index.js"></script>
   <title>Esports - NLW</title>
 </head>
 <body>
@@ -21,24 +20,25 @@
       <div>
         <h2>Assitente de Meta</h2>
         <p>Pergunte sobre estratégias, build e dicas para seus jogos!</p>
-        <form>
-          <input type="password" placeholder="Informe a chave API do Gemini" id="" required>
-          <select id="">
+        <form id="form">
+          <input type="password" placeholder="Informe a chave API do Gemini" id="apiKey" required>
+          <select id="gameSelect">
             <option value="">Selecione um jogo</option>
             <option value="valorant">Valorant</option>
             <option value="lol">League of Legends</option>
             <option value="csgo">CS: GO</option>
           </select>
-          <input type="text" placeholder="Ex: Melhor build para ADC ..." required>
-          <button>Perguntar</button>
+          <input type="text" id="questionInput" placeholder="Ex: Melhor build para ADC ..." required>
+          <button id="askButton">Perguntar</button>
         </form>
         <div id="aiResponse">
           <div class="response-content">
-
+            
           </div>
         </div>
       </div>
     </section>
+    <script src="./index.js"></script>
   </main>
 </body>
 </html>
